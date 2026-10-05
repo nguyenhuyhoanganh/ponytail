@@ -1,6 +1,6 @@
 # ponytail (minimal)
 
-Bản rút gọn của [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail): chỉ giữ rule và skill, bỏ plugin, hook, MCP, subagent, benchmark. Dùng được cho Claude Code, Codex, Gemini CLI, Cline.
+Chỉ giữ rule và skill, bỏ plugin, hook, MCP, subagent, benchmark. Dùng được cho Claude Code, Codex, Gemini CLI, Cline.
 
 ## Cài vào dự án
 
