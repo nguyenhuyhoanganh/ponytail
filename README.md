@@ -4,7 +4,7 @@ Chỉ giữ rule và skill, bỏ plugin, hook, MCP, subagent, benchmark. Dùng �
 
 ## Cài vào dự án
 
-Copy vào thư mục gốc của dự án (giữ nguyên symlink):
+Copy vào thư mục gốc của dự án:
 
 ```bash
 cp -a AGENTS.md CLAUDE.md GEMINI.md .agents .claude /path/to/project/
@@ -20,7 +20,7 @@ Dự án đã có sẵn `CLAUDE.md` / `GEMINI.md` thì chỉ cần thêm dòng `
 | `CLAUDE.md` | `@AGENTS.md` | Claude Code |
 | `GEMINI.md` | `@AGENTS.md` | Gemini CLI |
 | `.agents/skills/` | Skill | Codex, Cline, Gemini CLI |
-| `.claude/skills` | Symlink tới `.agents/skills` | Claude Code |
+| `.claude/skills` | Bản copy của `.agents/skills` | Claude Code |
 
 Skill:
 
@@ -33,4 +33,4 @@ Gọi skill: Claude Code `/ponytail-review`, Codex `$ponytail-review`; Gemini v�
 
 Không có hook nên mức `lite/ultra` chỉ giữ trong phiên hiện tại; rule trong `AGENTS.md` (mức full) luôn bật.
 
-Windows: git cần `core.symlinks=true`, nếu không hãy thay `.claude/skills` bằng bản copy của `.agents/skills`.
+Sửa skill thì sửa cả hai chỗ `.agents/skills` và `.claude/skills`.
