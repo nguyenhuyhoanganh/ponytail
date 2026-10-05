@@ -22,7 +22,6 @@ Dự án đã có sẵn `CLAUDE.md` / `GEMINI.md` thì chỉ cần thêm dòng `
 | `.agents/skills/` | Skill | Codex, Cline, Gemini CLI |
 | `.claude/skills` | Bản copy của `.agents/skills` | Claude Code |
 | `.clinerules/ponytail.md` | Bản copy của `AGENTS.md` | Cline |
-| `.clinerules/workflows/` | Slash command: `/ponytail-review.md`, `/ponytail-audit.md`, `/ponytail-debt.md` | Cline |
 
 Skill:
 
