@@ -7,7 +7,7 @@ Chỉ giữ rule và skill, bỏ plugin, hook, MCP, subagent, benchmark. Dùng �
 Copy vào thư mục gốc của dự án:
 
 ```bash
-cp -a AGENTS.md CLAUDE.md GEMINI.md .agents .claude .clinerules /path/to/project/
+cp -a AGENTS.md CLAUDE.md GEMINI.md .agents .claude /path/to/project/
 ```
 
 Dự án đã có sẵn `CLAUDE.md` / `GEMINI.md` thì chỉ cần thêm dòng `@AGENTS.md` vào file đó.
@@ -21,7 +21,6 @@ Dự án đã có sẵn `CLAUDE.md` / `GEMINI.md` thì chỉ cần thêm dòng `
 | `GEMINI.md` | `@AGENTS.md` | Gemini CLI |
 | `.agents/skills/` | Skill | Codex, Cline, Gemini CLI |
 | `.claude/skills` | Bản copy của `.agents/skills` | Claude Code |
-| `.clinerules/ponytail.md` | Bản copy của `AGENTS.md` | Cline |
 
 Skill:
 
@@ -34,4 +33,4 @@ Gọi skill: Claude Code `/ponytail-review`, Codex `$ponytail-review`; Gemini v�
 
 Không có hook nên mức `lite/ultra` chỉ giữ trong phiên hiện tại; rule trong `AGENTS.md` (mức full) luôn bật.
 
-Sửa skill thì sửa cả hai chỗ `.agents/skills` và `.claude/skills`; sửa rule thì sửa cả `AGENTS.md` và `.clinerules/ponytail.md`.
+Sửa skill thì sửa cả hai chỗ `.agents/skills` và `.claude/skills`.
